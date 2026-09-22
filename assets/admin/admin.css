@@ -1,0 +1,34 @@
+/* Painel do tema Ingá Orthos */
+.io-intro { max-width: 70ch; color: #50575e; }
+.io-wrap { max-width: 980px; }
+
+.io-section { border: 1px solid #dcdcde; border-radius: 8px; background: #fff; margin: 14px 0; }
+.io-section > summary { cursor: pointer; padding: 12px 16px; font-size: 14px; font-weight: 600; color: #0c2a1a; list-style: none; }
+.io-section > summary::-webkit-details-marker { display: none; }
+.io-section > summary::before { content: "▸"; display: inline-block; width: 1.2em; color: #b68a40; transition: transform .15s; }
+.io-section[open] > summary::before { transform: rotate(90deg); }
+.io-section__body { padding: 4px 16px 16px; border-top: 1px solid #f0f0f1; }
+
+.io-field { margin: 14px 0; }
+.io-label { display: block; margin-bottom: 4px; font-weight: 600; font-size: 13px; }
+.io-field input[type="text"], .io-field textarea, .io-field select { width: 100%; max-width: 100%; }
+.io-field textarea { resize: vertical; }
+.io-help { margin: 4px 0 0; font-size: 12px; color: #6c7781; }
+
+.io-image { display: flex; align-items: center; gap: 14px; }
+.io-image__preview { width: 120px; height: 80px; flex: none; display: grid; place-items: center; overflow: hidden; border: 1px dashed #c3c4c7; border-radius: 6px; background: #f6f7f7; color: #8c8f94; font-size: 12px; }
+.io-image__preview img { width: 100%; height: 100%; object-fit: cover; }
+.io-image__btns { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; }
+.io-image-clear { color: #b32d2e; }
+
+.io-repeater { margin: 6px 0 14px; padding: 12px; border: 1px solid #dcdcde; border-radius: 8px; background: #f6f7f7; }
+.io-repeater__title { margin-bottom: 8px; font-size: 13px; font-weight: 600; }
+.io-row { margin-bottom: 8px; border: 1px solid #dcdcde; border-radius: 6px; background: #fff; }
+.io-row > summary { display: flex; align-items: center; justify-content: space-between; gap: 10px; cursor: pointer; padding: 9px 12px; list-style: none; }
+.io-row > summary::-webkit-details-marker { display: none; }
+.io-row__title { font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.io-row__tools { display: flex; gap: 4px; flex: none; }
+.io-row__tools button { width: 28px; height: 28px; border: 1px solid #dcdcde; border-radius: 4px; background: #fff; cursor: pointer; line-height: 1; }
+.io-row__tools button:hover { border-color: #2271b1; color: #2271b1; }
+.io-row__tools .io-del:hover { border-color: #b32d2e; color: #b32d2e; }
+.io-row__body { padding: 0 14px 12px; border-top: 1px solid #f0f0f1; }
